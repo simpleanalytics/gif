@@ -10,8 +10,13 @@
   </head>
   <body>
     <h1>Test Simple Analytics GIF</h1>
+    <p data-response>&nbsp;</p>
     <p>🙏 Thank you!</p>
 
-    <img src="https://sa5.adriaan.io/lalala.gif" alt="GIF did not load!!">
+    <img
+         src="https://sa5.adriaan.io/lalala.gif"
+         onload="javacascript:document.querySelector('[data-response]').textContent = 'GIF loaded correctly'"
+         onerror="javacascript:document.querySelector('[data-response]').textContent = 'GIF did not load correctly'"
+         alt="">
   </body>
 </html>
